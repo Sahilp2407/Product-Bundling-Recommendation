@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up • Techno‑Gen</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { background: radial-gradient(1200px 600px at 20% -10%, #ffe5e5, transparent), radial-gradient(1000px 500px at 120% 110%, #e5f1ff, transparent); }
+    .auth-wrapper { min-height: 100vh; display: grid; place-items: center; padding: 40px 16px; }
+    .auth-card { width: 100%; max-width: 960px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.12); display: grid; grid-template-columns: 1.1fr 1fr; }
+    .brand-pane { position: relative; background: linear-gradient(135deg, #0f0f10, #1b1b1d); color: #fff; padding: 48px; display: flex; flex-direction: column; justify-content: space-between; }
+    .brand-logo { height: 28px; filter: invert(1); }
+    .brand-title { font-size: 1.8rem; font-weight: 700; margin-top: 12px; }
+    .brand-sub { color: #b7b7b7; margin-top: 6px; line-height: 1.5; }
+    .brand-bullets { margin-top: 16px; display: grid; gap: 8px; color: #eaeaea; font-size: 0.95rem; }
+    .brand-bullets span { display: inline-flex; align-items: center; gap: 8px; }
+    .brand-bullets i { color: #ff3b3b; }
+    .brand-art { margin-top: 24px; border-radius: 14px; overflow: hidden; background: #111; border: 1px solid rgba(255,255,255,0.12); }
+    .brand-art img { width: 100%; display: block; }
+
+    .form-pane { padding: 48px 40px; }
+    .form-pane h1 { font-size: 1.8rem; margin: 0 0 6px; }
+    .form-pane .sub { color:#666; margin-bottom: 18px; }
+    .field { margin-bottom: 14px; }
+    .field label { display:block; font-size: 0.9rem; margin-bottom: 6px; color:#222; }
+    .field input { width:100%; padding:12px 14px; border:1px solid #e5e5e7; border-radius:10px; outline:none; transition: border-color .2s, box-shadow .2s; background:#fafafa; }
+    .field input:focus { border-color:#000; background:#fff; box-shadow: 0 0 0 4px rgba(0,0,0,0.06); }
+    .field.inline { display:flex; align-items:center; gap:10px; }
+    .actions { margin-top: 12px; }
+    .actions button { width:100%; padding:14px; background:#111; color:#fff; border:none; border-radius:10px; font-weight:700; cursor:pointer; letter-spacing:.2px; box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+    .alt { margin-top: 10px; font-size: .92rem; color:#555; }
+    .alt a { color:#111; font-weight: 600; }
+    .status { margin-top:12px; font-size:0.92rem; min-height: 20px; }
+    .ok { color:#0b8a00; }
+    .err { color:#b00020; }
+    @media (max-width: 900px) { .auth-card { grid-template-columns: 1fr; } .brand-pane { padding: 28px; } .form-pane { padding: 28px 22px; } }
+  </style>
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <aside class="brand-pane">
+        <div>
+          <style>.text-logo{font-weight:800;font-size:22px;letter-spacing:.3px}.text-logo .accent{color:#ff2a2a}</style>
+          <div class="brand-logo text-logo"><span class="accent">Techno</span>‑Gen</div>
+          <div class="brand-title">Create your Techno‑Gen account</div>
+          <div class="brand-sub">Join the crew for faster checkout, order tracking and curated offers.</div>
+          <div class="brand-bullets">
+            <span><i class="fas fa-bolt"></i> Faster checkout</span>
+            <span><i class="fas fa-shield-alt"></i> Secure & private</span>
+            <span><i class="fas fa-gift"></i> Member-only offers</span>
+          </div>
+        </div>
+        <div class="brand-art">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_181_pro_1.png" alt="Techno‑Gen products" />
+        </div>
+      </aside>
+
+      <section class="form-pane">
+        <h1>Sign up</h1>
+        <div class="sub">Create your account with email</div>
+
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Minimum 6 characters" />
+        </div>
+        <div class="field">
+          <label for="confirm">Confirm Password</label>
+          <input id="confirm" type="password" placeholder="Re-enter password" />
+        </div>
+        <div class="field inline">
+          <input id="terms" type="checkbox" />
+          <label for="terms" style="margin:0;">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+
+        <div class="actions">
+          <button id="signupBtn">Create account</button>
+        </div>
+        <div class="status" id="status"></div>
+        <div class="alt">Already have an account? <a href="login.html">Login</a></div>
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+
+<!-- saved from url=(0054)https://www.boat-lifestyle.com/apps/soft/testfile.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Survey</title>
+<style type="text/css">/* fonts */
+@font-face {
+	font-family: 'montserrat_black';
+	font-style: normal;
+	src: local('montserrat_black'), url('https://res.cloudinary.com/dmkrvzitv/raw/upload/v1582727725/seyyd5ibnm2pu4isngeq.woff2') format('opentype');
+}
+@font-face {
+	font-family: 'source-sans-pro';
+	font-style: bold;
+	src: local('source-sans-pro'), url('https://res.cloudinary.com/dmkrvzitv/raw/upload/v1583751233/source-sans-pro-regular.woff2') format('opentype');
+}
+@font-face {
+	font-family: 'montserrat_black';
+	font-style: normal;
+	src: local('montserrat_black'), url('https://res.cloudinary.com/dmkrvzitv/raw/upload/v1582727726/lbpq0elst82fzamr2axq.woff') format('opentype');
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+	padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul[class],
+ol[class] {
+	list-style: none;
+}
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+article > * + * {
+	margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+button {
+	border: none;
+	background-color: transparent;
+}
+.d-flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-end {
+	justify-content: flex-end;
+}
+.align-items-center {
+	align-items: center;
+}
+.align-items-stretch {
+	align-items: stretch;
+}
+h2, h4 {
+	padding: 0px;
+	margin: 0px;
+}
+a:hover{
+	color: #c4c4c4;
+	text-decoration: none;
+}
+.btn {
+	font-size: 18px;
+	letter-spacing: 0;
+	width: 100%;
+	border-radius: 6px;
+	height: 57px;
+	margin-top: 0px;
+	font-family: 'montserrat_black';
+	font-size: 18px;
+	letter-spacing: 0;
+}
+#bottom {
+	background: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 0 0 6px 6px;
+}
+#title {
+	text-align: center;
+	margin-top: 0px;
+	font-size: 23px;
+	font-family: 'montserrat_black';
+	line-height: normal;
+	letter-spacing: normal;
+	color: black;
+}
+#content {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 17px;
+	font-family: 'source-sans-pro';
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: normal;
+	color: #727272;
+}
+#header {
+	height: 175px;
+	border-radius: 6px 6px 0 0;
+}
+.background-image {
+	height: 100px;
+	width: 80%;
+	background: url('https://res.cloudinary.com/dfj8nwtsk/image/upload/v1588843724/styleguideIllustrationMail_3x_gsqtf5.png');
+	background-size: 80px 81px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.close-btn{
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: none;
+	padding: 0;
+	border: none;
+	border: 1px solid white;
+}
+.close-btn:focus {
+	outline: none;
+}
+.cross:before, .cross:after {
+	position: absolute;
+	content: ' ';
+	height: 16px;
+	width: 3px;
+	background-color: black;
+}
+.cross:before {
+	transform: rotate(45deg);
+}
+.cross:after {
+	transform: rotate(-45deg);
+}
+.input {
+	width: 100%;
+	margin: 16px 0 0 0;
+	font-family: 'Apercu';
+	font-size: 14px;
+	color: #5A6175;
+	background-color: rgba(0,0,0,0.05);
+	border: none;
+	border-radius: 5px;
+	resize: none;
+	padding: 5px;
+}
+
+/*@media screen and (max-width: 540px){*/
+	.wzrk-alert {
+		width: auto;
+	    margin: auto 0;
+	    top: 13% !important;
+	    left: 10px;
+	    right: 10px;
+	}
+	.wzrk-overlay {
+		background-color: transparent !important;
+	}
+/*}*/
+.wzrk-button-container button {
+    background-color: #1A2024!important;
+    border-radius: 10px!important;
+    height: 48px;
+}
+#wzrk-cancel, .No.thanks, .wzrk-powered {display:none!important;}
+
+</style>
+</head>
+<body onload="sendFeedback()">
+<script type="text/javascript" async="" src="./clevertap.min.js"></script><script src="./jquery.min.js"></script>
+<script>
+$(".No.thanks").click(function(){ console.log("click"); window.parent.document.getElementById("myModal").classList.remove("show");});
+
+
+	function closeInApp() {
+		//document.location.href = "wzrk://thisleadstonowhere";
+	}
+
+
+
+	var subscribed = false;
+	function sendFeedback() {
+		clevertap.notifications.push({
+			"titleText":"Notification",
+			"bodyText":"You Won Up To 70% OFF. Claim it and unlock more updates like this.",
+			"okButtonText":"Count me in!",
+			"rejectButtonText":"No thanks",
+			"okButtonColor":"#f28046",
+			"askAgainTimeInSeconds":1,
+			"serviceWorkerPath": "Clevertap_sw.js", //Path with app proxy mentioned above
+			"subscriptionCallback":function () {
+				subscribed = true;
+				console.log("user subscribed for web push notifications");
+			},
+			"okCallback": function() {
+				window.parent.document.getElementById("myBtn").click();
+			}
+		});
+		closeInApp();
+	}
+
+</script>
+
+<script type="text/javascript">
+
+ var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+    clevertap.account.push({"id": "8W4-9WW-Z85Z"});
+    clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+    clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+    (function () {
+        var wzrk = document.createElement('script');
+        wzrk.type = 'text/javascript';
+        wzrk.async = true;
+        wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/clevertap.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wzrk, s);
+    })();
+    
+</script>
+<script type="text/javascript">
+	(function() {
+		if (localStorage && localStorage.getItem("WZRK_WPR") === null) {
+			console.log("not registered");
+			parent.postMessage(JSON.stringify(
+				{ "from": "ct", "state": "not" }
+			), "*");
+		}
+	})();
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "shopkaro-ccf43",
+    "firebase deploy --only hosting --project shopkaro-ccf43": "new-project-2b72d"
+  },
+  "targets": {},
+  "etags": {}
+}

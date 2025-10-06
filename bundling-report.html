@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Techno‑Gen Bundling — Business Report</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/white.css" id="theme">
+  <style>
+    :root{ --brand:#111; --accent:#ff2a2a; }
+    .reveal h1,.reveal h2,.reveal h3{ color:var(--brand); font-weight:800; letter-spacing:.2px; }
+    .reveal .brand { font-weight:900; font-size:26px; }
+    .reveal .brand .accent{ color:var(--accent); }
+    .reveal section ul{ font-size:30px; line-height:1.35; }
+    .note{ color:#6b7280; font-size:18px; margin-top:8px; }
+    .pill{ display:inline-block; padding:4px 10px; border-radius:999px; background:#f3f4f6; font-size:16px; margin-right:6px; }
+    .ok{ color:#16a34a }
+    .warn{ color:#b45309 }
+    .bad{ color:#dc2626 }
+    .grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:start; }
+    .kpi{ background:#f9fafb; border:1px solid #e5e7eb; border-radius:12px; padding:12px; }
+  </style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<section>
+  <div class="brand"><span class="accent">Techno</span>-Gen</div>
+  <h1>Product Bundling — Business Report</h1>
+  <p>Bundling is the hero. Everything else supports conversion, trust, and retention.</p>
+  <p class="note">Author: Sahil Pandey • Oct 2025</p>
+</section>
+
+<section>
+  <h2>Executive Summary</h2>
+  <ul>
+    <li>On-page bundling raises AOV and cuts decision friction.</li>
+    <li>Clean checkout with UPI QR; addresses and orders saved to Firebase.</li>
+    <li>Curated + graph-based recos on PDP; totals update live.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>1) Product Bundling Strategy</h2>
+  <div class="grid-2">
+    <div>
+      <ul>
+        <li>Objective: Increase AOV via relevant accessories.</li>
+        <li>Logic: Curated map + compatibility graph (one-hop).</li>
+        <li>UX: Bundle modal on PDP; instant totals in checkout.</li>
+        <li>Data: Address before payment; order on place-order.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="kpi">
+        <strong>Pricing</strong>
+        <ul>
+          <li>Visible savings/strike-through.</li>
+          <li>Optional tiers: Starter (1), Pro (2).</li>
+          <li>Margin guardrails on bundle discount.</li>
+        </ul>
+      </div>
+      <div class="kpi" style="margin-top:12px;">
+        <strong>KPIs</strong>
+        <ul>
+          <li>Attach rate • Take rate</li>
+          <li>AOV uplift • Return delta</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>2) Marketing Concepts (Applied)</h2>
+  <ul>
+    <li>Customer-centric: remove friction, show "works well together".</li>
+    <li>Value = convenience + savings + compatibility assurance.</li>
+    <li>4Ps/7Ps mapped to PDP merchandising and checkout messages.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>3) Customer Lifecycle & Retention</h2>
+  <ul>
+    <li>Awareness → PDP → Bundle add → Checkout → Address save → Order → Revisit.</li>
+    <li>Activation: Bundle modal + QR pay. Retention: saved address/orders.</li>
+    <li>Measure: Conversion, AOV, repeat rate, cohorts.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>4) Branding & Relationship Building</h2>
+  <ul>
+    <li>Brand promise: Smart, convenient, good-value tech shopping.</li>
+    <li>Trust: Transparent pricing, ratings, clean QR payment.</li>
+    <li>Relationship: Less friction on repeat via saved data.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5) Sales Strategy</h2>
+  <ul>
+    <li>PDP-first selling; helpful add-ons at the exact decision moment.</li>
+    <li>Anchoring with MRP vs bundle price.</li>
+    <li>Choice architecture: pre-select one high-fit accessory, keep options few.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6) Customer Retention Models</h2>
+  <ul>
+    <li>RFM (planned): Recency, Frequency, Monetary → VIP/At-risk segments.</li>
+    <li>NPS (planned): Track Promoters − Detractors trend.</li>
+    <li>CLV (simple): ARPU × margin × time horizon.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>7) Kano Model</h2>
+  <ul>
+    <li>Must-be: Smooth checkout, accurate totals, address persistence.</li>
+    <li>Performance: Speed (QR, prefilled forms).</li>
+    <li>Delighters: Smart, relevant bundle suggestions.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8) Sales Motivation & Team Performance</h2>
+  <ul>
+    <li>Targets: Attach rate %, take rate %, AOV uplift.</li>
+    <li>Incentives: Reward quality bundles, control returns.</li>
+    <li>Enablement: Simple scripts + a small live KPI dashboard (planned).</li>
+  </ul>
+</section>
+
+<section>
+  <h2>9) Data & Systems</h2>
+  <ul>
+    <li>Auth: Anonymous sign-in → guaranteed uid.</li>
+    <li>Firestore: users/{uid}/addresses, users/{uid}/orders + mirror orders/*.</li>
+    <li>Realtime DB: users/{uid}/addresses (parallel write).</li>
+    <li>DSA: Graph + Set for recos; dictionary lookups; reduce for totals.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>10) Risks & Mitigations</h2>
+  <ul>
+    <li><span class="bad">Margin erosion</span> → discount guardrails.</li>
+    <li><span class="warn">Irrelevant recos</span> → tune curated rules/edges.</li>
+    <li><span class="warn">Bundle returns</span> → clear policy + recalculation.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>11) Roadmap (Short)</h2>
+  <ul>
+    <li>Top‑K ranking (max‑heap) for best add‑ons.</li>
+    <li>Threshold discount: Pick any 2 → 7% off.</li>
+    <li>Mini dashboard: AOV, orders/day, attach rate.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <ul>
+    <li>Bundling is the primary growth lever.</li>
+    <li>Lean implementation today; extensible for analytics and ranking.</li>
+    <li>Clear path to higher revenue and better UX with minimal risk.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Sources</h2>
+  <ul>
+    <li>Project implementation (PDP, bundle modal, checkout, Firebase).</li>
+    <li>Marketing frameworks: 4Ps/7Ps, Lifecycle, RFM, NPS, CLV, Kano.</li>
+    <li>Choice architecture and pricing psychology best practices.</li>
+  </ul>
+</section>
+
+</div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    controls: true,
+    progress: true,
+    slideNumber: true,
+    transition: 'fade'
+  });
+</script>
+</body>
+</html>
