@@ -1,5 +1,7 @@
 # Techno‑Gen E‑Commerce Site
 
+Website URL:- "https://new-project-2b72d.web.app/"
+
 A modern single‑page shopping experience inspired by boAt, built with modular vanilla JS, HTML, and CSS. It features a home page with “Big Deals”, a product detail page with an enhanced checkout + bundle modal, Firebase integration, and a clean componentized structure.
 
 ## Overview
